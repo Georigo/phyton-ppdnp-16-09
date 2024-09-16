@@ -54,7 +54,7 @@ starszy = "Witaj %s!"  # %s - string
 print(starszy % imie)  # Witaj Radek!
 print(starszy % ("\b" * 3))  # Wit!
 
- je
+print("Witaj {}!".format(imie))  # Witaj Radek!
 
 # tekst wielolinijkowy
 print("""Tekst
