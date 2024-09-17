@@ -1,6 +1,7 @@
 # kolekcja - wile danych w jednym pudełko
 # lista - przechowuje wiele danych różnego typu na raz
 # zachowuje kolejność przy dodawaniu elementów
+from sys import base_prefix
 
 lista = []
 print(lista)  # []
@@ -83,3 +84,21 @@ print(lista.pop(5))  # Ja usunięty elemnt na indeksie 5, zwraca usunięty eleme
 print(lista.pop(-2))  # Malwina
 print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mariusz', 'Mikołaj']
 print(lista.pop())  # Mikołaj
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+b = 7
+print(a, b)  # 3 7
+
+lista_2 = lista  # a = b, kopiuje referencje (adres)
+lista_copy = lista.copy()  # kopia elemntów listy
+lista.clear()  # b =7 , czyszcenie listy
+print(lista)  # []
+print(lista_2)  # []
+print(lista_copy)
+print(id(lista))  # 1418136260992
+print(id(lista_2))  # 1418136260992
+print(id(lista_copy))  # 2122795319040
+print(type(lista_copy))  # <class 'list'>
