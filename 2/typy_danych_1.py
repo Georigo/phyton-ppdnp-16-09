@@ -1,4 +1,5 @@
 import sys
+from email.quoprimime import body_length
 
 wiek = 47
 rok = 2024
@@ -60,3 +61,52 @@ print(f"""
 {temp}""")
 # 47
 # 36.6
+
+# typ logiczny
+# prawdda, fałsz
+# True, False
+# 1 - prawda, 0  - fałsz
+czy_znasz_pythona = True
+print(czy_znasz_pythona)
+print(type(czy_znasz_pythona))  # <class 'bool'>
+
+print(int(czy_znasz_pythona))  # 1
+print(int(False))  # 0
+
+print(bool(1))  # True
+print(bool(100))
+print(bool(-100))
+print(bool(-6.8))
+print("radek")
+print(bool(" "))  # True
+# True
+# True
+# True
+# True
+# radek
+
+print(bool(0))
+print(bool(""))
+# False
+# False
+
+print(bool(None))  # False, None - nic, stan nnieokreslony, odpowiednik null
+
+# działania logiczne
+# and -> i
+print(True and True)  # True
+print(False and True)  # False
+print(True and False)  # False
+print(False and False)  # False
+
+# or - lub
+print(True or True)  # True
+print(True or False)  # True
+print(False or True)  # True
+print(False or False)  # False
+
+# not - negacja
+print(not True)  # False
+print(not False)  # True
+
+
