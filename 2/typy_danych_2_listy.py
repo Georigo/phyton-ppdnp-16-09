@@ -102,3 +102,43 @@ print(id(lista))  # 1418136260992
 print(id(lista_2))  # 1418136260992
 print(id(lista_copy))  # 2122795319040
 print(type(lista_copy))  # <class 'list'>
+
+liczby = [54, 999, 34, 22, 12.34, 687]
+print(liczby)  # [54, 999, 34, 22, 12.34, 687]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()  # sortowanie
+print(liczby)  # [12.34, 22, 34, 54, 687, 999]
+
+liczby_a = [54, 999, 34, 22, 12.34, 687, "A"]
+# liczby_a.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+lista_osob = ['radek', 'ola', 'lena', 'agata']
+lista_osob.sort()
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+print(ord("A"))  # kod znaku w ascii 65
+
+lista_osob.sort(reverse=True)  # sortowanie i odwrócenie
+print(lista_osob)  # ['radek', 'ola', 'lena', 'agata']
+
+lista_osob.reverse()  # odwrócenie bez sortowania
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+
+liczby[3] = 666
+print(liczby[0:3])  # [12.34, 22, 34]
+print(liczby[-2])  # 687
+print(liczby)  # [12.34, 22, 34, 666, 687, 999]
+
+del liczby  # usunięcie listy z pamięci
+# print(liczby)# NameError: name 'liczby' is not defined. Did you mean: 'liczby_a'?
+
+tekst = "Pyth on."
+lista1 = list(tekst)  # rozpakowanie sekwencji
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_osob)  # tuple() - rzutowanie na krotke (tuple)
+print(krotka)  # ('agata', 'lena', 'ola', 'radek')
+print(type(krotka))  # <class 'tuple'>
