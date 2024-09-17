@@ -31,7 +31,7 @@ print(dictionary['imie'])  # Radek
 print(dictionary.get("Imie"))  # None - domyslna wartośc, gdy brak klucza w słowniku
 print(dictionary.get("Imie", "Domyślna"))  # Domyślna
 
-dictionary.update({'data': '12-12-2024'})
+dictionary.update({'data': '12-1aa a2-2024'})
 print(dictionary)  # {'imie': 'Radek', 'wiek': 38, 'data': '12-12-2024'}
 
 dict_small = {'x': 2}
@@ -55,3 +55,8 @@ print(a + int(b))  # 11.0
 # wypisac klucze
 # pobrac słowo od uzytkownika
 # wyswietlic tłumaczenie (wartosc dla klucza)
+pol_ang = {'kot': 'cat', 'pies': 'dog'}
+print(f"Znam takie slowka: {pol_ang.keys()}")
+odp = input("Podaj słowko do przetłumaczenia").lower()
+print(pol_ang[odp.lower().replace(" ", "")])
+print(pol_ang.get(odp, "nie mo"))
