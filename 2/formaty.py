@@ -72,3 +72,6 @@ print(f"Nasza duża liczba {liczba:,}".replace(",", "."))  # Nasza duża liczba 
 liczba_2 = 15_000_000
 print(type(liczba_2))  # <class 'int'>
 print(liczba_2)  # 15000000
+
+liczba_str = "15_000_000"
+print(int(liczba_str))  # 15000000
