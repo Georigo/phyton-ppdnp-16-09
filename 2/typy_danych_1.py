@@ -109,4 +109,13 @@ print(False or False)  # False
 print(not True)  # False
 print(not False)  # True
 
+a = 8
+b = 6
 
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 8 > 6 = True
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 8 < 6 = False
+print(f"Porównanie {a <= b=}")  # Porównanie a <= b=False
+print(f"Porównanie {a >= b=}")  # Porównanie a >= b=True
+print(f"Porównanie {a} == {b} = {a == b}")  # Porównanie 8 == 6 = False, == - prównanie
+print(f"Porównanie {a} != {b} = {a != b}")  # czy różne, Porównanie 8 != 6 = True
+print(f"{a=}")  # a=8
