@@ -57,3 +57,29 @@ print(lista_15)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 print(lista_15[0:15:2])  # start:stop:krok, [0, 2, 4, 6, 8, 10, 12, 14]
 print(lista_15[-10])  # 5
 print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14]
+
+# nadpisanie elementu w liście
+# zmieniana jest bazowa lista
+lista[3] = "Mikołaj"
+print(lista)
+# ['Radek', 'Tomek', 'Zenek', 'Mikołaj', 'Mariusz', 'Ja', 'Malwina']
+
+# insert() wstawienie elementu we wskazanym indeksie
+lista.insert(1, "Karol")
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Mariusz', 'Ja', 'Malwina']
+
+# sprawdzenie indeksu elementu
+print(lista.index("Mikołaj"))  # 4
+lista.append("Mikołaj")
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Mariusz', 'Ja', 'Malwina', 'Mikołaj']
+print(lista.index("Mikołaj"))  # 4 zwraca pierwsze wystąpienie
+
+# usunięcie elemntu, pierwsze wystąpienie
+lista.remove("Mikołaj")
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mariusz', 'Ja', 'Malwina', 'Mikołaj']
+
+# usunięcie po indeksie
+print(lista.pop(5))  # Ja usunięty elemnt na indeksie 5, zwraca usunięty element
+print(lista.pop(-2))  # Malwina
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mariusz', 'Mikołaj']
+print(lista.pop())  # Mikołaj
