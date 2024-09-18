@@ -115,3 +115,31 @@ else:
 print(lista_b)
 # System email
 # ['Bład krytyczny']
+
+a = 10
+assert a > 5
+# assert a > 15
+# Traceback (most recent call last):
+#   File "C:\Users\CSComarch\PycharmProjects\ppdnp-16-09\3\warunki.py", line 121, in <module>
+#     assert a > 15
+#            ^^^^^^
+# AssertionError
+
+# napisac test z...
+# wyswietlic pytanie
+# pobrac odpowiedź
+# wypisac sprawdzenie
+punkty = 0
+odp = input("Podaj datę Chrztu Polski")  # str
+if odp == "966":
+    print("Brawo")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Błąd")
+print("Punkty:", punkty)
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
