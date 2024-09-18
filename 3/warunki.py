@@ -1,0 +1,61 @@
+# instrukcje warunkowe
+# instrukcje sterowania przpływem programu
+# w zaleznosci od warunku (True lub False) wykona jeden lub drugi blok programu
+# if
+
+odp = True
+print(bool(odp))  # True
+# odp = False
+if odp:
+    print("Brawo")
+    print("Brawo")
+    print("Brawo")
+    print("Brawo")
+
+print("Dalsza częśc programu")
+# True
+# Brawo
+# Brawo
+# Brawo
+# Brawo
+# Dalsza częśc programu
+# dla odp= False wynik:
+# True
+# Dalsza częśc programu
+
+odp = "Radek"
+print(bool(odp))
+
+if odp:
+    print("Radek")
+# Radek
+
+if odp == "Radek":
+    print("Radek")
+# True
+# Radek
+# Radek
+odp = "Tomek"
+if odp == "Radek":
+    print("Radek")
+else:  # działanie domyslne
+    print("To nie jest Radek")
+
+a = "Radek"
+# długosc tekstu wieksza niz 3
+if len(a) > 3:
+    print("Długośc większa niz 3, wynosi:", len(a))
+
+a = "Radek"
+# długosc tekstu wieksza niz 3
+n = len(a)
+if n > 3:
+    print("Długośc większa niz 3, wynosi:", n)
+
+# walrus operator, operator morsa
+a = 'Radek'
+if (n := len(a)) > 3:
+    print("Długośc większa niz 3, wynosi:", n)
+# Długośc większa niz 3, wynosi: 5
+# Długośc większa niz 3, wynosi: 5
+# Długośc większa niz 3, wynosi: 5
