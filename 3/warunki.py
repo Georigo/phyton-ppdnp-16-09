@@ -88,3 +88,30 @@ print(f"Rabat wynosi {rabacik}")
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wynosi {rabat}")
 
+# zasymulujemy sytem zbierannia logów
+# zmienne beda przechowyc dane, krtóre przyszły z zewnętrznego systemu
+# email, console, inny
+# dla console : "Stało się coś strasnego"
+# dla email: "System email"
+# gdy system email to
+# dodaj opis błedu i umiesc go w liscie błedów
+alert_system = 'email'
+error = 'error'
+lista_b = []
+
+if alert_system == 'console':
+    print('Stało się coś strasznego')
+elif alert_system == "email":
+    print("System email")
+    if error == 'error':
+        lista_b.append("Bład krytyczny")
+    elif error == 'medium':
+        lista_b.append("Ostrzeżenie")
+    else:
+        print("inny błąd")
+else:
+    print("Nieznany system")
+
+print(lista_b)
+# System email
+# ['Bład krytyczny']
