@@ -1,6 +1,7 @@
 # pętle - dająmożliwośc wykonania wielokrotnie tego samego kodu
 # for - pętla iteracyjna
 import random
+from encodings.utf_7 import encode
 
 for i in range(5):  # od 0 do 4
     print(i)
@@ -99,3 +100,103 @@ for c in lista3:
 # Przy kazdym elemencie pętli 4
 # Przy kazdym elemencie pętli 6
 # Przy kazdym elemencie pętli 8
+
+imiona = ["Radek", "Tomek", "Zenek", "Anna"]
+print(imiona)
+print(type(imiona))
+# ['Radek', 'Tomek', 'Zenek', 'Anna']
+# <class 'list'>
+
+for p in imiona:
+    print(p)
+# Radek
+# Tomek
+# Zenek
+# Anna
+
+# jak te elementy wyswietlic w postaci 0 Radek
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Anna
+
+for i in range(len(imiona)):  # range(4) -> 0123
+    print(i, imiona[i])
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Anna
+
+# enumerate()
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Zenek')
+# (3, 'Anna') -> 0 Radek
+a, b = (2, 'Zenek')
+print(a, b)  # 2 Zenek
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Zenek
+# 3 Anna
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Zenek
+# 4 Anna
+
+ludzie = ['Radek', "Tomek", "Zenek", 'Magda']
+wiek = [44, 55, 32, 27]
+# wypisac to tak: Radek 44
+for p in ludzie:
+    print(p, wiek[ludzie.index(p)])
+# Radek 44
+# Tomek 55
+# Zenek 32
+# Magda 27
+ludzie = ['Radek', "Tomek", "Zenek", 'Magda', "Marek"]
+wiek = [44, 55, 32, 27]
+# for p in ludzie:
+#     print(p, wiek[ludzie.index(p)])# IndexError: list index out of range
+
+# zip() - łączy elemnty w kolekcje
+for i in zip(ludzie, wiek):
+    print(i)
+# ('Radek', 44)
+# ('Tomek', 55)
+# ('Zenek', 32)
+# ('Magda', 27)
+for l, w in zip(ludzie, wiek):
+    print(l, w)
+# Radek 44
+# Tomek 55
+# Zenek 32
+# Magda 27
+
+# 0 Radek 44
+for i in enumerate(zip(ludzie, wiek)):
+    print(i)
+    # (0, ('Radek', 44))  -> 0 Radek 44
+    # (1, ('Tomek', 55))
+    # (2, ('Zenek', 32))
+    # (3, ('Magda', 27))
+a, b = (0, ('Radek', 44))
+print(a, b)  # 0 ('Radek', 44)
+c, d = ('Radek', 44)
+print(c, d)  # Radek 44
+print(a, c, d)  # 0 Radek 44
+a, (c, d) = (0, ('Radek', 44))
+print(a, c, d)  # 0 Radek 44
+for i, (l, w) in enumerate(zip(ludzie, wiek)):
+    print(i, l, w)
+# 0 Radek 44
+# 1 Tomek 55
+# 2 Zenek 32
+# 3 Magda 27
