@@ -1,6 +1,7 @@
 # storzenie funkcji obliczającej średnią
 def liczby(name=None, *cyfry):
-    print(cyfry)
+    print(cyfry)  # (3, 4, 4, 4, 3, 2)
+    print(type(cyfry))  # <class 'tuple'>
     count = len(cyfry)
     suma_sum = sum(cyfry)
     print(suma_sum)
