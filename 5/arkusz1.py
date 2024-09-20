@@ -10,7 +10,8 @@ deuration = ['50 Days', '30 Days', np.nan, '15 Days']
 discount = [2000, 1500, 800, 500, 100]
 colums = ['Columns', 'Fee', 'Duration', 'Discount']
 
-df = pd.DataFrame(list(zip(technologies, fee, deuration, discount)), columns=colums)
+df = pd.DataFrame(list(zip(technologies, fee, deuration, discount)),
+                  columns=colums)
 print(df)
 #   Columns    Fee Duration  Discount
 # 0   Spark  25000  50 Days      2000
