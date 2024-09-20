@@ -126,3 +126,4 @@ pip freeze > requirements.txt - generuje plik z wersjami bibliotek
 pip install -r .\requirements.txt
 
 pip install pyinstaller
+pyinstaller.exe --onefile --noconsole .\okno1.py
