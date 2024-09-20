@@ -1,0 +1,12 @@
+{
+  "table": "A",
+  "currency": "dolar amerykański",
+  "code": "USD",
+  "rates": [
+    {
+      "no": "184/A/NBP/2024",
+      "effectiveDate": "2024-09-20",
+      "mid": 3.8317
+    }
+  ]
+}
