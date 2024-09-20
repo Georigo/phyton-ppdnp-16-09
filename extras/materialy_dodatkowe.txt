@@ -121,3 +121,8 @@ https://www.hackerrank.com/challenges/py-hello-world/problem?isFullScreen=true
 https://pl.altapps.net/soft/hackerrank-com
 
 https://www.w3schools.com/python/
+
+pip freeze > requirements.txt - generuje plik z wersjami bibliotek
+pip install -r .\requirements.txt
+
+pip install pyinstaller
